@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Visa Approval Letter</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background: #f2f2f2;
+      }
+      .letter-container {
+        width: 800px;
+        margin: 40px auto;
+        background: #fff;
+        padding: 30px 40px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+      }
+      .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .header img {
+        width: 180px;
+      }
+      .title {
+        background: #002f5f;
+        color: #fff;
+        padding: 10px;
+        font-size: 20px;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        font-weight: bold;
+      }
+      .section {
+        margin-bottom: 20px;
+        line-height: 1.6;
+        font-size: 15px;
+        color: #000;
+      }
+      .highlight {
+        color: #0073e6;
+      }
+      .bottom-section {
+        border: 1px solid #ccc;
+        padding: 15px;
+        text-align: center;
+        margin-top: 40px;
+      }
+      .bottom-section img {
+        width: 90px;
+        margin-bottom: 10px;
+      }
+      .code {
+        font-size: 22px;
+        font-weight: bold;
+        margin-top: 10px;
+      }
+      .note {
+        font-size: 11px;
+        color: #777;
+        text-align: center;
+        margin-top: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="letter-container">
+      <div class="header">
+        <img src="logo.png" alt="Identity Malta" />
+        <div style="font-size: 13px; text-align: right">
+          Identity Malta<br />
+          Expatriates Unit<br />
+          Valley Road, Msida, MALTA<br />
+          +356 2590 4800<br />
+          singlepermit.ima@gov.mt<br />
+          www.identitymalta.com
+        </div>
+      </div>
+
+      <div class="title">Approval in Principle Letter</div>
+
+      <div class="section">
+        <strong>Date:</strong> 25 March 2023<br />
+        Krishna BASNET<br />
+        c/o M.K. MALTA RECRUITMENT AGENCY LTD<br />
+        Block 96, Formerly no. 7<br />
+        New Mill Street<br />
+        Il-Mellieħa
+      </div>
+
+      <div class="section">
+        <strong>Reference:</strong> R42603157
+        <strong>Residence Card No:</strong> O367990A
+      </div>
+
+      <div class="section">Dear Krishna BASNET,</div>
+
+      <div class="section">
+        This letter is in response to your application, dated 8 November 2022,
+        requesting a residence permit for the purpose of employment in Malta.
+        <br /><br />
+        Your application, as the holder of passport number
+        <strong>46562729</strong>
+        was submitted under the Single Permit procedure, as provided for in
+        Subsidiary Legislation 217.17 of the Laws of Malta.
+        <br /><br />
+        <strong style="color: red">
+          Please be informed that your request has been granted in principle,
+          but this letter is NOT your work permit.
+        </strong>
+        <br /><br />
+        You are authorised to proceed to Malta in order to take up employment in
+        the country subject to you fulfilling all other immigration
+        requirements.
+      </div>
+
+      <div class="section">
+        This approval to you as a third country national is without prejudice
+        to:
+        <ul>
+          <li
+            >- any further approval that may be required by the Maltese Health
+            Authorities to proceed to Malta
+            <span class="highlight"
+              >(as per Legal Notices 244, 255, 280 and 290 of 2020, and/or any
+              subsequent related LN)</span
+            ></li
+          >
+          <li
+            >- any visa requirements
+            <span class="highlight"
+              >especially if you reside in third countries where there is yet no
+              facilitation for visa</span
+            ></li
+          >
+          <li
+            >- any restrictions regarding travel to Malta imposed by other
+            states</li
+          >
+        </ul>
+      </div>
+
+      <div class="bottom-section">
+        <img src="qr.png" alt="QR Code" />
+        <div>Verify integrity of this document online:</div>
+        <a
+          href="javascript:void(0);"
+          onclick="showVerificationLink()"
+          id="verificationLink"
+          >Click here to verify</a
+        >
+        <div class="code">74344</div>
+      </div>
+
+      <div class="note"
+        >Approval in Principle – Still Abroad Applications V7.0</div
+      >
+    </div>
+
+    <script>
+      function showVerificationLink() {
+        const link = document.getElementById("verificationLink");
+        link.href = "visadetail.html";
+        link.textContent = "https://singlepermit.gov.mt/0Doc/";
+        link.onclick = function () {
+          window.location.href = "visadetail.html";
+        };
+      }
+    </script>
+  </body>
+</html>

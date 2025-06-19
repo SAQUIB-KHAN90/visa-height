@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enter Verification Code</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #f2f2f2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .box {
+        background: #fff;
+        padding: 40px;
+        border-radius: 8px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+      input[type="text"] {
+        padding: 10px;
+        width: 200px;
+        font-size: 16px;
+        margin-bottom: 20px;
+      }
+      button {
+        padding: 10px 20px;
+        font-size: 16px;
+        background: #005bac;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+      .error {
+        color: red;
+        font-size: 14px;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <h2>Enter Your Verification Code</h2>
+      <input type="text" id="codeInput" placeholder="Enter code here" />
+      <br />
+      <button onclick="verifyCode()">Submit</button>
+      <div id="errorMsg" class="error"></div>
+    </div>
+
+    <script>
+      function verifyCode() {
+        const correctCode = "74344";
+        const userInput = document.getElementById("codeInput").value.trim();
+        const errorMsg = document.getElementById("errorMsg");
+
+        if (userInput === correctCode) {
+          window.location.href = "visadetails.html"; // replace with actual page
+        } else {
+          errorMsg.textContent = "Invalid code. Please try again.";
+        }
+      }
+    </script>
+  </body>
+</html>

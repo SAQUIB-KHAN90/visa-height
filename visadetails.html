@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Submission Details</title>
+  </head>
+  <body
+    style="margin: 0; font-family: Arial, sans-serif; background-color: #f4f4f4"
+  >
+    <!-- Main Content -->
+    <div
+      id="visa-content"
+      style="
+        width: 90%;
+        max-width: 900px;
+        margin: 40px auto;
+        background: white;
+        border: 1px solid #ccc;
+        padding: 20px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      "
+    >
+      <div
+        style="
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 20px;
+        "
+      >
+        <div
+          style="
+            width: 80px;
+            height: 80px;
+            background: #eee;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 80px;
+            font-size: 12px;
+            color: #888;
+          "
+        >
+          User Profile<br />Picture
+        </div>
+        <img src="logo-ec--en.svg" style="height: 60px" />
+        <img
+          src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=https://your-site.com/verify"
+          style="height: 60px"
+        />
+      </div>
+
+      <h2
+        style="
+          text-align: center;
+          color: #2e6eaa;
+          border-bottom: 2px solid #dcdcdc;
+          padding-bottom: 10px;
+        "
+        >User Submission Details</h2
+      >
+
+      <div style="margin-top: 20px">
+        <h3 style="border-bottom: 1px solid #ccc; padding-bottom: 5px"
+          >File Information</h3
+        >
+        <p>File Submitted: <strong>File Number: EUR-89838400</strong></p>
+      </div>
+
+      <div style="margin-top: 20px">
+        <h3 style="border-bottom: 1px solid #ccc; padding-bottom: 5px"
+          >Payment Information</h3
+        >
+        <p
+          >Card Number:
+          <strong style="color: #2e6eaa">VISA</strong> xxxx-xxxx-xxxx-7764
+          &nbsp;&nbsp;&nbsp;&nbsp; Card Expiry: <strong>06/28</strong></p
+        >
+      </div>
+
+      <div style="margin-top: 20px">
+        <h3 style="border-bottom: 1px solid #ccc; padding-bottom: 5px"
+          >Personal Information</h3
+        >
+        <table style="width: 100%; font-size: 14px">
+          <tr
+            ><td>Full Name: Vikas Bansal</td><td>Other Name:</td
+            ><td>Gender: Male</td></tr
+          >
+          <tr
+            ><td>Date of Birth:</td><td>Place of Birth:</td
+            ><td>Citizenship:</td></tr
+          >
+          <tr
+            ><td>Current Country:</td><td>Country Applying For:</td
+            ><td>Marital Status: Single</td></tr
+          >
+          <tr
+            ><td>Spouse Name:</td><td>Native Language:</td
+            ><td>Passport Number:</td></tr
+          >
+          <tr
+            ><td>Passport Country:</td><td>Passport Issue Date:</td
+            ><td>Passport Expiry Date:</td></tr
+          >
+          <tr
+            ><td>National Identity Document:</td
+            ><td>US Permanent Resident Card: No</td></tr
+          >
+        </table>
+      </div>
+
+      <div style="margin-top: 20px">
+        <h3 style="border-bottom: 1px solid #ccc; padding-bottom: 5px"
+          >Visit Information</h3
+        >
+        <p>Visit From: <strong>Company Name:</strong></p>
+        <p
+          >Visit To:
+          <span style="background-color: #d0e9ff; padding: 3px 8px"
+            >Work Profile</span
+          >
+          &nbsp;&nbsp;&nbsp;&nbsp; Purpose of Visit:
+          <span style="background-color: #d0e9ff; padding: 3px 8px"
+            >Salary</span
+          ></p
+        >
+      </div>
+
+      <div style="margin-top: 20px">
+        <h3 style="border-bottom: 1px solid #ccc; padding-bottom: 5px"
+          >Contact Information</h3
+        >
+        <p>Email:</p>
+        <p>Phone: 9865903980 &nbsp;&nbsp;&nbsp;&nbsp; Alternate Phone:</p>
+        <p>Address:</p>
+        <p>Fax:</p>
+      </div>
+
+      <div style="margin-top: 20px">
+        <h3 style="border-bottom: 1px solid #ccc; padding-bottom: 5px"
+          >Financial Information</h3
+        >
+        <p>Funds Available:</p>
+        <p>Finance:</p>
+      </div>
+    </div>
+
+    <!-- Popup After 6 Seconds -->
+    <div
+      id="thanks-popup"
+      style="
+        display: none;
+        text-align: center;
+        margin-top: 200px;
+        font-size: 22px;
+        color: #2e6eaa;
+      "
+    >
+      <p><strong>✅ Thank you for viewing your visa details!</strong></p>
+      <p>You can now close this page or return to the homepage.</p>
+      <a
+        href="index.html"
+        style="
+          display: inline-block;
+          margin-top: 20px;
+          padding: 10px 20px;
+          background: #2e6eaa;
+          color: white;
+          text-decoration: none;
+          border-radius: 5px;
+        "
+        >Return to Home Page</a
+      >
+    </div>
+
+    <script>
+      setTimeout(() => {
+        document.getElementById("visa-content").style.display = "none";
+        document.getElementById("thanks-popup").style.display = "block";
+      }, 6000);
+    </script>
+  </body>
+</html>
