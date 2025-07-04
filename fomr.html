@@ -69,7 +69,7 @@
     </style>
   </head>
   <body>
-    <div class="letter-container">
+    <div class="letter-container" id="visa-content">
       <div class="header">
         <img src="logo.png" alt="Identity Malta" />
         <div style="font-size: 13px; text-align: right">
@@ -148,17 +148,39 @@
       <div class="bottom-section">
         <img src="images/Visa Details.png" alt="QR Code" />
         <div>Verify integrity of this document online:</div>
-        <a
-          href="javascript:void(0);"
-          onclick="showVerificationLink()"
-          id="verificationLink"
-          >Click here to verify</a
-        >
+
         <div class="code">74344</div>
       </div>
 
       <div class="note"
         >Approval in Principle – Still Abroad Applications V7.0</div
+      >
+    </div>
+    <!-- Popup After 6 Seconds -->
+    <div
+      id="thanks-popup"
+      style="
+        display: none;
+        text-align: center;
+        margin-top: 200px;
+        font-size: 22px;
+        color: #2e6eaa;
+      "
+    >
+      <p><strong>✅ Thank you for viewing your visa details!</strong></p>
+      <p>You can now close this page or return to the homepage.</p>
+      <a
+        href="index.html"
+        style="
+          display: inline-block;
+          margin-top: 20px;
+          padding: 10px 20px;
+          background: #2e6eaa;
+          color: white;
+          text-decoration: none;
+          border-radius: 5px;
+        "
+        >Return to Home Page</a
       >
     </div>
 
@@ -171,6 +193,12 @@
           window.location.href = "visadetail.html";
         };
       }
+    </script>
+    <script>
+      setTimeout(() => {
+        document.getElementById("visa-content").style.display = "none";
+        document.getElementById("thanks-popup").style.display = "block";
+      }, 60000); // 1 minute = 60,000 milliseconds
     </script>
   </body>
 </html>
